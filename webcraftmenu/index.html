@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>WebCraft</title>
+    <link rel="icon" href="assets/favicon.jpg" />
+
+    <script src="./main.js"></script>
+
+    <script src="./libraries/p5.js"></script>
+    <script src="./libraries/p5.clickable.js"></script>
+    <script src="./libraries/three.js"></script>
+    <script src="./libraries/PointerLockControls.js"></script>
+    <script src="./libraries/simplex-noise.js"></script>
+
+    <script src="./classes/UIManager.js" type="module"></script>
+    <script src="./classes/Player.js"></script>
+
+    <script type = "module">
+      import renderthread from './threads/RenderThread.js';
+      import UIManager from './classes/UIManager.js';
+      UI_ = new UIManager();
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <body>
+      <script src="./threads/UIThread.js"></script>
+    </body>
+    <canvas id="bg"></canvas>
+    <div id="app"></div>
+    <script src="./threads/RenderThread.js" type = 'module'></script>
+  </body>
+</html>

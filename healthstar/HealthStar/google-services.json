@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "27072008479",
+    "project_id": "healthstar-e439e",
+    "storage_bucket": "healthstar-e439e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27072008479:android:532c55af3b0ed3ed1e602a",
+        "android_client_info": {
+          "package_name": "com.subnerd.healthstar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27072008479-ttmv3jgb7t9ksqeitojcj7400sp7pkq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCxcL47L9DypmzhodQoV8-BvhvmOhKi_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27072008479-ttmv3jgb7t9ksqeitojcj7400sp7pkq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

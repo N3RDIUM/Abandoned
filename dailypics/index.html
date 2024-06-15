@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>DailyPics</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="./main.js"></script>
+    <script>
+      localStorage.setItem("loggedIn",false)
+      localStorage.setItem("username",null)
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="headerIcon">
+        <img src="./assets/normalmap.jpg" width="50" height="50" />
+      </div>
+      <div class="headerText">
+        <p>DailyPics</p>
+      </div>
+      <div class="HeaderTab">
+        <button type="button" onclick="goToHome()">Home</button>
+      </div>
+      <div class="HeaderTab">
+        <button type="button" onclick="goToExplore()">Explore</button>
+      </div>
+      <div class="headerRight">
+        <button type="button" onclick="goToAccount()">
+          <img src="./assets/usericon.jpg" width="35" height="35" />
+        </button>
+      </div>
+    </div>
+    <div class="appArea_">
+      <iframe id="appArea" src="./pages/get-started.html" width="99%" height="89%"></iframe>
+    </div>
+  </body>
+</html>

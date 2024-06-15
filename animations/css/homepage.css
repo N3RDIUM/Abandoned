@@ -1,0 +1,161 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes header_fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes category_hover {
+  0% {
+    background-color: #008282;
+  }
+  100% {
+    background-color: #003737;
+  }
+}
+
+@keyframes category_unhover {
+  0% {
+    background-color: #003737;
+  }
+  100% {
+    background-color: #008282;
+  }
+}
+
+.Header {
+  background-color: #f1f1f1;
+  height: 15%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.header_text {
+  text-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.header_text_category {
+  text-align: center;
+  width: 90%;
+}
+
+.title {
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #008282;
+  margin-bottom: 2%;
+  animation: header_fade_in 2s;
+}
+
+.subtitle {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  animation: header_fade_in 3s;
+}
+
+.categories {
+  background-color: #00828238;
+  height: 85%;
+  align-items: center;
+  padding: 3%;
+  display: block;
+}
+
+.category {
+  margin: 3%;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 95%;
+  height: 30%;
+  background-color: #008282;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: category_unhover 1s;
+}
+
+.category:hover {
+  animation: category_hover 1s;
+  background-color: #003737;
+}
+
+.category_image {
+  height: 100px;
+  width: 100px;
+  margin: 5%;
+  border-radius: 20%;
+}
+
+.category_text {
+  align-self: center;
+  justify-self: center;
+  color: #ffffff;
+  margin-right: 10%;
+}
+
+.animation_text {
+  align-self: center;
+  justify-self: center;
+  color: #ffffff;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1%;
+}
+
+.animation_image {
+  height: 100px;
+  width: 100px;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+}
+
+.animation {
+  margin: 2%;
+  background-color: #008282;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  display: table-cell;
+  border: 3px solid white;
+}
+
+.animations {
+  background-color: white;
+  display: table;
+}
+
+.header_back {
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  width: min-content;
+  height: 80%;
+  width: 10%;
+  background-color: #008282;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: category_unhover 1s;
+  align-self: center;
+  justify-self: center;
+  color: #ffffff;
+}
+
+.header_back:hover {
+  animation: category_hover 1s;
+  background-color: #003737;
+}

@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+astropy
+skyfield
+=======
+astropy
+skyfield
+>>>>>>> 8e914ed4c6e90ab176ef086bc801202bf3863653
+winrt

@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "projectName",
+    "slug": "projectName",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.somepythonprogrammer.quarantineapp"
+    }
+  },
+  "name": "projectName"
+}

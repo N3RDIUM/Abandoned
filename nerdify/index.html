@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Loading - Nerdify</title>
+    <meta
+      name="description"
+      content="Welcome to Nerdify! This is a place for us nerds (amateur and professional) to geek out together!"
+    />
+    <!--Get firebase and the required modules-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyC9RqblQJncUtRtI-Q-QLdq0q5GlrbPNGU",
+        authDomain: "nerdify-firebase.firebaseapp.com",
+        projectId: "nerdify-firebase",
+        storageBucket: "nerdify-firebase.appspot.com",
+        messagingSenderId: "815350952338",
+        appId: "1:815350952338:web:9b9dd409d032dca4f2d14b",
+        measurementId: "G-1NBSTVP5MJ",
+      };
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const analytics = firebase.analytics();
+      const auth = firebase.auth();
+
+      // Get the current user
+      const user = auth.currentUser;
+      if (user) {
+        window.lodation.href = "./user/home.html";
+      } else {
+        window.location.href = "./public/index.html";
+      }
+    </script>
+  </head>
+</html>

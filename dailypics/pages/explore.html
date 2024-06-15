@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Explore DailyPics</title>
+    <script src="../main.js"></script>
+    <script type="module">
+      //console.log(localStorage.getItem("loggedIn"));
+      if (localStorage.getItem("loggedIn") === "false") {
+        //console.log("not logged in yet.");
+        window.location.replace("./login.html");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="appArea_">xplore</div>
+  </body>
+</html>

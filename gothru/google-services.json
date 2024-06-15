@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "93165224089",
+    "project_id": "gothru-aa793",
+    "storage_bucket": "gothru-aa793.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93165224089:android:dad51e52124fe46bacb808",
+        "android_client_info": {
+          "package_name": "com.skydev.gothru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93165224089-7maselkpuv7p0t648u8ib6474r54a5ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu6r3Mev1DpzY2iK8pddhRUr9R9reabY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93165224089-7maselkpuv7p0t648u8ib6474r54a5ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>DailyPics Login</title>
+    <link rel="stylesheet" type="text/css" href="styles/login.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script type="module" src="../initialise.js"></script>
+    <script type="module" src="../utils.js"></script>
+    <script src="../main.js"></script>
+    <script type="module">
+      import utils from "../utils.js";
+      var _login = () => {
+        utils.login();
+      };
+      document.getElementById("loginButton").onclick = _login;
+      export default _login;
+    </script>
+  </head>
+  <body>
+    <div class="title">
+      <p>Login</p>
+    </div>
+    <div class="inputs">
+      <div class="username">
+        <input
+          type="text"
+          id="un"
+          placeholder="Enter Username"
+          name="username"
+          required
+        />
+      </div>
+      <div class="password">
+        <input
+          type="password"
+          id="pw"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+      </div>
+    </div>
+    <div class="enterButton">
+      <button id="loginButton" class="btn">Login</button>
+    </div>
+    <div class="enterButton_">
+      <button class="btn" onclick="window.location.replace('./signup.html')">
+        Don't have an account?
+      </button>
+    </div>
+  </body>
+</html>

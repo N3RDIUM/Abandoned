@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>DailyPics Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/home.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="../main.js"></script>
+    <script type="module">
+      import app from "../initialise.js";
+      //console.log(localStorage.getItem("loggedIn"));
+      if (localStorage.getItem("loggedIn") === "false") {
+        //console.log("not logged in yet.");
+        window.location.replace("./login.html");
+      }
+      app.db
+        .collection("usage")
+        .doc("TimesVisited")
+        .update({ number: firebase.firestore.FieldValue.increment(1) });
+    </script>
+  </head>
+  <body>
+    <div class="appArea_">
+      <p>Home</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Live desktop wallpaper</title>
+
+    <style>
+      html,
+      body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #renderCanvas {
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+      }
+    </style>
+
+    <script>
+      const dev = false // turn this to true to enable the dev mode
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src='perlin.js'></script>
+    <script src="objects.js"> </script>
+    <script src="planetbase.js"></script>
+  </head>
+
+  <body>
+    <div class="command_window" id="command_window">
+      <script src="interface.js"></script>
+      <div class="datetime">
+        <div class="time">
+          --:--
+        </div>
+        <div class="date">
+          -- -- --
+        </div>
+      </div>
+    </div>
+    <canvas id="renderCanvas">
+    </canvas>
+    <!-- touch-action="none" for best results from PEP -->
+    <script type="module" src="script.js"> </script>
+  </body>
+</html>

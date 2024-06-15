@@ -1,0 +1,80 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+canvas {
+  border: 0px;
+}
+.titlePage {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin:5px;
+  padding:2px
+}
+.titlePageText{
+  margin-top:10%;
+}
+.titlePageText:visited{
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+.titlePageTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  color: rgb(1, 117, 80);
+  margin-top: 20%;
+  margin-left: 15%;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+.titlePageSubtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: rgb(0, 160, 107);
+  margin-top: 20%;
+  margin-left: 10%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
